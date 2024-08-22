@@ -2,15 +2,27 @@
 A manual for the all terrain vehicle pluto. It provides documentation of hardware, 
 
 # Table of contents
-- [1. Introduction](#Hardware)
-- [2. Hardware](#Hardware)
-    - [2.1 Computational Hardware](#)
-    - [2.2 Sensor Hardware](#overview)
-    - [2.3 Mechanical & Electrical Hardware](###overview)
-- [3. Operation](##Operation)
+- [Introduction](#Introduction)
+- [Hardware](#Hardware)
+    - [Computational Hardware](##Computational Hardware)
+    - [Sensor Hardware](##Sensor Hardware)
+    - [Mechanical & Electrical Hardware](##Mechanical & Electrical Hardware)
+- [Operation](#Operation)
 
-
-
-## Hardware
+# Introduction
 test test
 
+# Hardware
+test test
+
+## Computational Hardware
+test test
+
+## Sensor Hardware
+test test
+
+## Mechanical & Electrical Hardware
+test 
+
+# Operation
+test test
