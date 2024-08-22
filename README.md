@@ -1,12 +1,12 @@
 # Pluto-ATRV
 A manual for the all terrain vehicle pluto. It provides documentation of hardware, 
 
-# Table of contents
+## Table of contents
 - [Introduction](#Introduction)
 - [Hardware](#Hardware)
-    - [Computational Hardware](##Computational Hardware)
-    - [Sensor Hardware](##Sensor Hardware)
-    - [Mechanical & Electrical Hardware](##Mechanical & Electrical Hardware)
+    - [Computational Hardware](##Computational-Hardware)
+    - [Sensor Hardware](##Sensor-Hardware)
+    - [Mechanical & Electrical Hardware](##Mechanical-&-Electrical-Hardware)
 - [Operation](#Operation)
 
 # Introduction
