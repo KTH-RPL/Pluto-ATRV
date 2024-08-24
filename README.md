@@ -42,22 +42,18 @@ Pluto comes equipped with a wide variety of sensor modalities. The main sensors 
 - 2x Intel realsense D455 RGBD cameras, with overlapping front facing coverage
 - 1x VectorNav 200 IMU, mounted in between the lidars
 
-However, there is also a GNSS mounted towards the rear of the vehicle. This sensor is mounted separately, as the OS-1 Lidar severely affects the reception capability of the GNSS antenna. 
+However, there is also a GNSS mounted towards the rear of the vehicle. This sensor is mounted separately, as the OS-1 Lidar severely affects the reception capability of the GNSS antenna. The GNSS module is an Emlid Reach M2, with capability for RTK and PPK augmentations.
 
+Manuals/specifications for these sensors are included in the folder named "datasheets". However, two things to also note:
 
-lidars, cameras, IMU, GPS, PPK, Sonars
+1. The GNSS does not have a pdf reference, please instead see https://docs.emlid.com/reach/reference/specifications/specs/
+2. The D455 cameras have a light sensitivity issue. We have included a document with description from Intel on this problem, and solved it by using NE06B filters from https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=5011
 
-3 Pictures - sensor rig, sonars, GPS
-5 documentations - ouster, livox, realsense, imu, gps
-
-note that gps has no pdf: see https://docs.emlid.com/reach/reference/specifications/specs/ 
-
-also need to describe how to work with ppk / rtk for gps
-
-camera issue
-This is a saturation artifact of a very sensitive global shutter sensor. The pixels are quite large (4.5x bigger in area than D435 color sensor) and well suited for fast motion in normal outdoor light and all indoor operations. Under very bright conditions the sensor starts to saturate. Instead of us limiting the exposure and over-saturating the image, we are permitting the brighter conditions in our FW, so as to extend the range
+2 Pictures - sensor rig, GPS
 
 ## Computational Hardware
+The robot 
+
 Intel nucs, NVIDIA jetson
 
 2 pictures - Intel NUC, Jetson
