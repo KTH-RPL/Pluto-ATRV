@@ -21,15 +21,11 @@ A manual for the all terrain vehicle (ATRV) Pluto.
 # Introduction
 Pluto is a bright red all terrain vehicle, produced by iRobot in the early 2000s (this is the Sr model, also called the ATRV-II). The company no longer offers support for this robot, which can make technical issues with the vehicle seem more daunting. While the chassis and lower level electronics remain similar to the old robot, a lot has been replaced or added to this robot. This manual aims to make it easier for future users to figure out the capabilities of Pluto, and to make use of it in their project.
 
-The instructions and explanations in the following sections contain several locations, with directions such as "rear", "front", "left" and "right". To make clear the use of this language, we illustrate the following:
-
-PHOTO
-
-Furthermore, it is possible to open up Pluto's hull to work with the interior components if necessary. To open up Pluto's hull, first ensure that the sensor rig, screen and any other lose components residing on Pluto will not fall or be damaged. Second, undo the three hinges on the left side of the robot hull. You can now pull open the top hull, as one would with a pirate chest. Note that you may have to pull towards the left side as well, as the top is not completely rigid when not secured. 
+It is possible to open up Pluto's hull to work with the interior components if necessary. To open up Pluto's hull, first ensure that the sensor rig, screen and any other lose components residing on Pluto will not fall or be damaged. Second, undo the three hinges on the left side of the robot hull. You can now pull open the top hull, as one would with a chest. 
 
 ![screenshot](images/pluto_second_layer.jpg)
 
-Having opened the chassis, there is a second lid. This results in Pluto having three different levels (see image):
+Having opened the chassis, there is a second lid that can also be opened to reveal the engines and batteries (and some additional electronics). This results in Pluto having three different levels (see image):
 
 ![screenshot](images/pluto_third_layer.jpg)
 
