@@ -118,7 +118,7 @@ A word of advice is to collect some short data, and then inspect the data with t
 1 picture of data collected in rqt
 
 ### GNSS
-
+discussion on how to collect GPS data and postprocess it 
 
 
 # FAQ
