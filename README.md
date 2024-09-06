@@ -123,12 +123,18 @@ A word of advice is to collect some short data, and then inspect the data with t
 
 # FAQ
 
-## I would like to use Pluto for a project, who do I speak to?
+## I would like to use Pluto for a project, who can I talk to?
+The robot is owned by professor Patric Jensfelt, and used for projects by doctoral student Waqas Ali (2024-), reach out if you are interested.
 
+## The robot is making noise during operation, is this normal?
+There are several sources of noise. The sounds that are emitted normally but which might be interpreted as problematic are the lidar and engine belts. While the sensor rig is on, the Livox lidar emits a "grinding", almost "sandy" noise. When the robot turns, it sometimes emits a sharp thumping sound. This is a sound coming from an engine belt.
 
 ## Why is the robot not moving?
-Here are the most likely reasons for why the robot is not moving, and what to do
+Here are the most likely reasons for why the robot is not moving. Check in the following order
 
 - Ensure that BOTH the real brake and virtual brakes are turned off. See "Operation/Getting It Moving".
 - Ensure that you have not accidentally pressed "mode" on the handheld controller. 
-- 
+- Is there enough charge in the main batteries that power the engine? Check the battery voltage in the console. A nominal voltage with fully charged batteries will display anything in the range of 25.4 to 26 Volt. If you are several Volt below that, there is reason to suspect this cause.
+- Are the batteries (2xAA) in the handheld controller dead?
+- The USB based reciever for the handheld controller has been accidentally disconnected from the NUC inside Pluto.
+- Open up the chassis fully to check the engine level. There are several motor driver PCBs which are connected to the upper level by an ethernet cable. This cable can become loose - if the lights of the PCBs at the lowest level are red (blinking or solid color), then the cable is not fully connected and cannot transmit a signal. Try wiggling the cable which connects the upper and lower level at the connection point (not forcefully), or replace it.
