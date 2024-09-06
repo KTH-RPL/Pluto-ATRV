@@ -27,11 +27,11 @@ PHOTO
 
 Furthermore, it is possible to open up Pluto's hull to work with the interior components if necessary. To open up Pluto's hull, first ensure that the sensor rig, screen and any other lose components residing on Pluto will not fall or be damaged. Second, undo the three hinges on the left side of the robot hull. You can now pull open the top hull, as one would with a pirate chest. Note that you may have to pull towards the left side as well, as the top is not completely rigid when not secured. 
 
-![screenshot](images/pluto_second_layer.jpg.png)
+![screenshot](images/pluto_second_layer.jpg)
 
 Having opened the chassis, there is a second lid. This results in Pluto having three different levels (see image):
 
-![screenshot](images/pluto_third_layer.jpg.png)
+![screenshot](images/pluto_third_layer.jpg)
 
 
 # Hardware
