@@ -54,15 +54,10 @@ The robot has several different computer architectures on board. To collect data
 
 Note that at the time of writing, the Jetson is not currently utilized by Pluto. This is planned to change in the future.
 
-Intel nucs, NVIDIA jetson
-
-2 pictures - Intel NUC, Jetson
-3 documentations (each nuc version, and jetson)
-
 ## Mechanical & Electrical Hardware
 We use a wireless controller of the type "Logitech F710 Wireless Gamepad" to control the robot movement. The wireless reciever for this controller is connected to the Intel NUC on the second level of the robot chassis. To interact with the sensor rig, any type of bluetooth keyboard can be used.
 
-There are four electrical DC Gearmotors in the vehicle, produced by Bison Gear & Engineering Corp. These motors are separately connected to each of the four wheels of the robot through toothed belts. As with most electric vehicles, this gives greater control opportunities, and Pluto is able to spin on location because of this. The motors each have the following electro-mechanical properties
+There are four electrical DC Gearmotors in the vehicle, produced by Bison Gear & Engineering Corp. These motors are separately connected to each of the four wheels of the robot through toothed belts. As with most electric vehicles, this gives greater control opportunities, and Pluto is able to produce pure rotation without translation because of this. The motors each have the following electro-mechanical properties
 
 - 0.25 Horsepower
 - 24 Volt (DC)
@@ -71,13 +66,7 @@ There are four electrical DC Gearmotors in the vehicle, produced by Bison Gear &
 - 9.8 N-m Torque
 - 11:1 Gear ratio
 
-The robot has recently had its batteries replaced (mid 2024). It currently runs with four Victron LiFePO4 batteries, which each are 12,8V 20Ah. These power the engines, the two computers and the GNSS on Pluto. The sensor rig uses a separate power source, a 
-
-
-Motors, battery, controllers
-
-2 pictures - Motor & battery, controller & reciever
-3 documentations - controller, motors, batteries
+The robot has recently had its batteries replaced (mid 2024). While it used to run on EnerSys 12HX135FR lead acid batteries, it currently runs with four Victron LiFePO4 batteries, which each are 12,8V 20Ah. These power the engines, the two computers and the GNSS on Pluto. The sensor rig uses a separate power source, a TB47 DJI intelligent flight battery. The documentation on the Victron battery is included as a pdf. Also note that the drone lab currently has four TB47 batteries, but also four TB48 batteries which can be used interchangeably for the sensor rig if the need arises in the future (but are currently used for the DJI M300 drone).
 
 # Software
 In general, software for sensors and actuation runs with Ubuntu 20.4, and ROS Noetic.
@@ -97,6 +86,10 @@ give link to miguels software
 Discuss how to charge batteries (both pluto and sensor rig)
 also discuss safety of battery charging
 1 picture of batteries being charged
+
+![screenshot](images/charging.jpg)
+
+![screenshot](images/charging_dji.jpg)
 
 ## Getting It Moving
 The first step is to turn on the power. This is controlled by the breaker mounted on the outside of the lower rear hull of Pluto. 
