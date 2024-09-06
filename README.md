@@ -23,13 +23,15 @@ Pluto is a bright red all terrain vehicle, produced by iRobot in the early 2000s
 
 The instructions and explanations in the following sections contain several locations, with directions such as "rear", "front", "left" and "right". To make clear the use of this language, we illustrate the following:
 
-1 picture of pluto from above
+PHOTO
 
-Furthermore, it is possible to open up Pluto's hull to work with the interior components if necessary. To open up Pluto's hull, first ensure that the sensor rig and any other lose components residing on Pluto will not fall or be damaged. Second, undo the three hinges on the left side of the robot hull. You can now pull open the top hull, as one would with a pirate chest. Note that you may have to pull towards the left side as well, as the top is not completely rigid when not secured. 
+Furthermore, it is possible to open up Pluto's hull to work with the interior components if necessary. To open up Pluto's hull, first ensure that the sensor rig, screen and any other lose components residing on Pluto will not fall or be damaged. Second, undo the three hinges on the left side of the robot hull. You can now pull open the top hull, as one would with a pirate chest. Note that you may have to pull towards the left side as well, as the top is not completely rigid when not secured. 
+
+![screenshot](images/pluto_second_layer.jpg.png)
 
 Having opened the chassis, there is a second lid. This results in Pluto having three different levels (see image):
 
-2 pictures of opened pluto, different levels
+![screenshot](images/pluto_third_layer.jpg.png)
 
 
 # Hardware
