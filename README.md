@@ -117,11 +117,13 @@ Ensure that the sensor rig battery is charged and turned on. To turn on this bat
 - Press CTRL + 5 to start collecting sensor data in a rosbag.
 - Press CTRL + 0 to stop collection, and turn off sensor nodes.
 
-1 picture of screen with nodes on, so on
+Assuming a screen is connected to the sensor rig, it would be expected to start looking like the following once CTRL + 1 is pressed (with a slight delay after pressing until everything turns on)
 
-A word of advice is to collect some short data, and then inspect the data with the "rqt" command (needs a roscore running in a separate terminal). The bags are saved in a folder simply named "bags". You can inspect the bag and see that all the data is coming in as expected.
+![screenshot](images/ros.png)
 
-1 picture of data collected in rqt
+Note that once pressing CTRL + 5 to turn on collection, a separate terminal will pop up as well that controls the bag node. A word of advice is to collect some short data, and then inspect the data with the "rqt" command (needs a roscore running in a separate terminal). The bags are saved in a folder simply named "bags". You can inspect the bag and see that all the data is coming in as expected. A bag might look like the following.
+
+![screenshot](images/rqt.png)
 
 ### GNSS
 discussion on how to collect GPS data and postprocess it 
