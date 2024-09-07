@@ -50,7 +50,7 @@ Manuals/specifications for these sensors are included in the folder named "datas
 2 Pictures - sensor rig, GPS
 
 ## Computational Hardware
-The robot has several different computer architectures on board. To collect data, the sensor rig has a separate Intel NUC, with x86 architecture. Pluto also has an older Intel NUC on the second level of the chassis, as well as an ARM based Nvidia Jetson AGX Orin. The documentation for these are included. 
+The robot has several different computer architectures on board. To collect data, the sensor rig has a separate Intel NUC, with x86 architecture. Pluto also has an older Intel NUC on the second level of the chassis, as well as an ARM based Nvidia Jetson AGX Orin.
 
 Note that at the time of writing, the Jetson is not currently utilized by Pluto. This is planned to change in the future.
 
@@ -72,7 +72,7 @@ The robot has recently had its batteries replaced (mid 2024). While it used to r
 In general, software for sensors and actuation runs with Ubuntu 20.4, and ROS Noetic.
 
 ## Sensor Rig
-The sensor rig has a few scripts to make collecting data easier. We include these scripts in the software section, in case these are needed. With a keyboard connected to the sensor rig NUC, operation then becomes very simple (see operation section).
+The sensor rig has a few scripts to make collecting data easier. We include these scripts in the software section, in case these are needed. With a (wireless) keyboard connected to the sensor rig NUC, operation then becomes very simple (see operation section).
 
 ## GNSS
 The GNSS is separately interfaced with, using the Emlid Flow app (available for android and iOS) and wifi. This allows for the collection of data in a RINEX format, which is very useful for post-processing with any avaiable software on the market.
@@ -83,24 +83,30 @@ give link to miguels software
 # Operation
 
 ## Charging Batteries
-Discuss how to charge batteries (both pluto and sensor rig)
-also discuss safety of battery charging
-1 picture of batteries being charged
+Note: Charging batteries is a potential fire hazard. Make sure you are aware of the safety regulations at RPL, and where batteries are allowed to be charged before doing this.
+
+The batteries used in Pluto can be accessed in the third level, beneath the two lids. Here, you can charge the batteries by connecting the Anderson power connectors one by one as shown in the figure below. We use a Victron blue smart 12V 15A charger, which can also be connected with over bluetooth to control the charging cycle, or view charging details. Currently there are two such chargers at RPL, so charging can be done with two batteries at the same time to speed up the process. There is also a connector at the back of Pluto which connects to the power grid, and enables charging all four connected batteries at the same time, however we do not currently have a charger with compatible connection to this port. 
 
 ![screenshot](images/charging.jpg)
+
+To charge the batteries used in the sensor rig, one needs to use a DJI hex charger. This allows connecting and charging up to 6 batteries at the same time. To charge the batteries, connect the hex charger to a wall socket with a computer power cord. Attach the batteries to be charged as seen in the figure below. Ensure that the lights on the batteries turn on, indicating charging.
 
 ![screenshot](images/charging_dji.jpg)
 
 ## Getting It Moving
-The first step is to turn on the power. This is controlled by the breaker mounted on the outside of the lower rear hull of Pluto. 
+The first step is to turn on the power. This is controlled by the breaker mounted on the outside of the lower rear hull of Pluto. After this, one needs to press the knob that controls the Pluto console - at this point the fans should begin spinning, and after a short delay the console will boot and light up.
 
-discuss how to turn on power
-discuss how to turn off brakes (key, real brakes, virtual brakes)
-discuss how to move the robot
-mention the emergency brakes
+Wait a little bit, and then you can begin to turn off the brakes. There are two separate brakes which we call "real" and "virtual". The real brakes are controlled by the Pluto console, while the virtual brake is controlled by the Intel NUC of Pluto and its ROS software.
 
-4 pictures - power switch & key, old driving computer, controller, emergency brakes
+We illustrate the components needed for the following steps in three images below. To turn off the real brakes, ensure that the activation key is in a horizontal position. Then navigate to the brake menu in the Pluto console, and press the console knob. To then turn off the virtual brakes, press the upper left trigger on the handheld controller. It is now possible to control and move Pluto, using the left stick of the handheld controller. If you quickly need to reapply the brakes, use the emergency buttons located on all four corners of Pluto if reachable. Otherwise, apply the virtual brake from the handheld controller.
 
+![screenshot](images/starting_instructions1.png)
+
+![screenshot](images/starting_instructions2.png)
+
+![screenshot](images/starting_instructions3.png)
+
+Note: There are no active brakes in the system. The brakes being applied relies on the inertia of the motors (which is quite tough to move, but the system can still be dragged/pushed at low speeds with the wheels turning slowly).
 
 ## Collecting Data
 
@@ -127,7 +133,9 @@ discussion on how to collect GPS data and postprocess it
 The robot is owned by professor Patric Jensfelt, and used for projects by doctoral student Waqas Ali (2024-), reach out if you are interested.
 
 ## The robot is making noise during operation, is this normal?
-There are several sources of noise. The sounds that are emitted normally but which might be interpreted as problematic are the lidar and engine belts. While the sensor rig is on, the Livox lidar emits a "grinding", almost "sandy" noise. When the robot turns, it sometimes emits a sharp thumping sound. This is a sound coming from an engine belt.
+There are several sources of noise, which are not cause for alarm. The sounds that are emitted normally but which might be interpreted as problematic are the lidar and engine belts. While the sensor rig is on, the Livox lidar emits a "grinding", almost "sandy" noise. When the robot moves, it sometimes emits a sharp thumping sound. This is a sound coming from an engine belt.
+
+It can be hard to recognize if these are the sounds that are being heard. Think critically on if you believe the sounds emanating are actually signs of damage, or just normal operation.
 
 ## Why is the robot not moving?
 Here are the most likely reasons for why the robot is not moving. Check in the following order
