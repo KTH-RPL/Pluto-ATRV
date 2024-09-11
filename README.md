@@ -33,21 +33,23 @@ Having opened the chassis, there is a second lid that can also be opened to reve
 # Hardware
 
 ## Sensor Hardware
-Pluto comes equipped with a wide variety of sensor modalities. The main sensors are located in a mast on the front of the vehicle. This includes 
+Pluto comes equipped with a wide variety of sensor modalities. The main sensors are located in a mast on the front of the vehicle (see image below). This includes 
 
 - 1x Ouster Os-1 Lidar, with 360 degree coverage
 - 1x Livox Mid-70 Lidar, with front facing coverage
 - 2x Intel realsense D455 RGBD cameras, with overlapping front facing coverage
 - 1x VectorNav 200 IMU, mounted in between the lidars
 
-However, there is also a GNSS mounted towards the rear of the vehicle. This sensor is mounted separately, as the OS-1 Lidar severely affects the reception capability of the GNSS antenna. The GNSS module is an Emlid Reach M2, with capability for RTK and PPK augmentations.
+![screenshot](images/sensor_rig_manual.png)
+
+However, there is also a GNSS mounted towards the rear of the vehicle (see image below). This sensor is mounted separately, as the OS-1 Lidar severely affects the reception capability of the GNSS antenna. The GNSS module is an Emlid Reach M2, with capability for RTK and PPK augmentations.
+
+![screenshot](images/GNSS_manual.png)
 
 Manuals/specifications for these sensors are included in the folder named "datasheets". However, two things to also note:
 
 1. The GNSS does not have a pdf reference, please instead see https://docs.emlid.com/reach/reference/specifications/specs/
 2. The D455 cameras have a light sensitivity issue. We have included a document with description from Intel on this problem, and solved it by using NE06B filters from https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=5011
-
-2 Pictures - sensor rig, GPS
 
 ## Computational Hardware
 The robot has several different computer architectures on board. To collect data, the sensor rig has a separate Intel NUC, with x86 architecture. Pluto also has an older Intel NUC on the second level of the chassis, as well as an ARM based Nvidia Jetson AGX Orin.
