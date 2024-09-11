@@ -71,7 +71,12 @@ There are four electrical DC Gearmotors in the vehicle, produced by Bison Gear &
 The robot has recently had its batteries replaced (mid 2024). While it used to run on EnerSys 12HX135FR lead acid batteries, it currently runs with four Victron LiFePO4 batteries, which each are 12,8V 20Ah. These power the engines, the two computers and the GNSS on Pluto. The sensor rig uses a separate power source, a TB47 DJI intelligent flight battery. The documentation on the Victron battery is included as a pdf. Also note that the drone lab currently has four TB47 batteries, but also four TB48 batteries which can be used interchangeably for the sensor rig if the need arises in the future (but are currently used for the DJI M300 drone).
 
 ## CAD files for 3D printing parts
-TODO: add CAD files, talk about what the parts are used for. Also print part for separating batteries
+There are files that can be 3D printed in the "3d files" folder. Both .par and .stl files are included, for easy printing and if further work on the parts are needed. A description of the use for each part is
+
+- CAMERA_filter_holder: Used to attach the ND filter to the realsense cameras. One for each camera is needed.
+- GPS_holder_flat: Used to attach the GNSS antenna in a raised fashion. Also doubles as space to put the receiver for the handheld controller.
+- NUC_roof: Used to reduce how exposed the internal components of the electrics and the NUC are. Also reduces the number of exposed cables. 
+- BATTERY_separator: 
 
 # Software
 In general, software for sensors and actuation runs with Ubuntu 20.4, and ROS Noetic.
