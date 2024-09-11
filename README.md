@@ -79,18 +79,20 @@ In general, software for sensors and actuation runs with Ubuntu 20.4, and ROS No
 ## Sensor Rig
 The sensor rig has a few scripts to make collecting data easier. We include these scripts in the software section, in case these are needed. With a (wireless) keyboard connected to the sensor rig NUC, operation then becomes very simple (see operation section).
 
+TODO: ADD SCRIPTS
+
 ## GNSS
 The GNSS is separately interfaced with, using the Emlid Flow app (available for android and iOS) and wifi. This allows for the collection of data in a RINEX format, which is very useful for post-processing with any avaiable software on the market.
 
 ## Robot Platform
-give link to miguels software
+TODO: give link to miguels software, explain. Talk about how bootup is handled automatically, but mentuion that it is possible to ssh to pluto wifi with passwords inside.
 
 # Operation
 
 ## Charging Batteries
 Note: Charging batteries is a potential fire hazard. Make sure you are aware of the safety regulations at RPL, and where batteries are allowed to be charged before doing this.
 
-The batteries used in Pluto can be accessed in the third level, beneath the two lids. Here, you can charge the batteries by connecting the Anderson power connectors one by one as shown in the figure below. We use a Victron blue smart 12V 15A charger, which can also be connected with over bluetooth to control the charging cycle, or view charging details. Currently there are two such chargers at RPL, so charging can be done with two batteries at the same time to speed up the process. There is also a connector at the back of Pluto which connects to the power grid, and enables charging all four connected batteries at the same time, however we do not currently have a charger with compatible connection to this port. 
+The batteries used in Pluto can be accessed in the third level, beneath the two lids. Here, you can charge the batteries by connecting the Anderson power connectors one by one as shown in the figure below. We use a Victron blue smart 12V 15A charger, which can also be connected with over bluetooth (using VictronConnect app, the passwords for pairing are written on the side of the chargers) to control the charging cycle, or view charging details. Currently there are two such chargers at RPL, so charging can be done with two batteries at the same time to speed up the process. There is also a connector at the back of Pluto which connects to the power grid, and enables charging all four connected batteries at the same time, however we do not currently have a charger with compatible connection to this port. 
 
 ![screenshot](images/charging.jpg)
 
@@ -131,7 +133,7 @@ Note that once pressing CTRL + 5 to turn on collection, a separate terminal will
 ![screenshot](images/rqt.png)
 
 ### GNSS
-discussion on how to collect GPS data and postprocess it 
+TODO: discussion on how to collect GPS data and postprocess it 
 
 
 # FAQ
