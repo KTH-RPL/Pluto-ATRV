@@ -150,6 +150,7 @@ It can be hard to recognize if these are the sounds that are being heard. Think 
 Here are the most likely reasons for why the robot is not moving. Check in the following order
 
 - Ensure that BOTH the real brake and virtual brakes are turned off. See "Operation/Getting It Moving".
+- Wait a little for the ROS software to turn on before you try to deactive the virtual brake.
 - Ensure that you have not accidentally pressed "mode" on the handheld controller. 
 - Is there enough charge in the main batteries that power the engine? Check the battery voltage in the console. A nominal voltage with fully charged batteries will display anything in the range of 25.4 to 26 Volt. If you are several Volt below that, there is reason to suspect this cause.
 - Are the batteries (2xAA) in the handheld controller dead?
