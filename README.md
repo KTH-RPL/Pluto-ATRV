@@ -68,6 +68,9 @@ There are four electrical DC Gearmotors in the vehicle, produced by Bison Gear &
 
 The robot has recently had its batteries replaced (mid 2024). While it used to run on EnerSys 12HX135FR lead acid batteries, it currently runs with four Victron LiFePO4 batteries, which each are 12,8V 20Ah. These power the engines, the two computers and the GNSS on Pluto. The sensor rig uses a separate power source, a TB47 DJI intelligent flight battery. The documentation on the Victron battery is included as a pdf. Also note that the drone lab currently has four TB47 batteries, but also four TB48 batteries which can be used interchangeably for the sensor rig if the need arises in the future (but are currently used for the DJI M300 drone).
 
+## CAD files for 3D printing parts
+The majority of 
+
 # Software
 In general, software for sensors and actuation runs with Ubuntu 20.4, and ROS Noetic.
 
