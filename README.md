@@ -81,11 +81,6 @@ There are files that can be 3D printed in the "3d files" folder. Both .par and .
 # Software
 In general, software for sensors and actuation runs with Ubuntu 20.4, and ROS Noetic.
 
-## Sensor Rig
-The sensor rig has a few scripts to make collecting data easier. We include these scripts in the software section, in case these are needed. With a (wireless) keyboard connected to the sensor rig NUC, operation then becomes very simple (see operation section).
-
-TODO: ADD SCRIPTS
-
 ## GNSS
 The GNSS is separately interfaced with, using the Emlid Flow app (available for android and iOS) and wifi. This allows for the collection of data in a RINEX format, which is very useful for post-processing with any avaiable software on the market.
 
