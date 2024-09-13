@@ -155,7 +155,9 @@ With these three files, input them as shown in the image below in Emlid Studio, 
 ![screenshot](images/Emlidstudio_files.PNG)
 
 Note: You will need a relatively stable connection to GNSS to get a good path accuracy. An example of a good path that you can achieve with this postprocess is shown first below. The grids represent 20cm intervals, and the data has a standard deviation in position below 3cm. Then an example of a bad path with poor connection is shown below as well. The grids in that image represent 2m. Therefore, if you want really accurate GNSS data, consider planning a path to where the sky is not covered too much.
+
 ![screenshot](images/good_gps_20cm.PNG)
+
 ![screenshot](images/bad_gps_2m.PNG)
 
 
