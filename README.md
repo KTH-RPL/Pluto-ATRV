@@ -76,7 +76,7 @@ There are files that can be 3D printed in the "3d files" folder. Both .par and .
 - CAMERA_filter_holder: Used to attach the ND filter to the realsense cameras. One for each camera is needed.
 - GPS_holder_flat: Used to attach the GNSS antenna in a raised fashion. Also doubles as space to put the receiver for the handheld controller.
 - NUC_roof: Used to reduce how exposed the internal components of the electrics and the NUC are. Also reduces the number of exposed cables. 
-- BATTERY_separator: Placed in the battery hold. If batteries are smaller than the hold size, keeps batteries from moving around. Made to be printable in a flashforge creator pro 3, and to allow for placing 2 extra victron batteries in the middle.
+- BATTERY_separator: Placed in the battery hold. With batteries being smaller than the hold size of the third level, keeps batteries from moving around. Made to be printable in a flashforge creator 3 (300x250x200mm), and to allow for placing 2 extra victron batteries in the middle if needed.
 
 # Software
 In general, software for sensors and actuation runs with Ubuntu 20.4, and ROS Noetic.
@@ -90,7 +90,11 @@ TODO: ADD SCRIPTS
 The GNSS is separately interfaced with, using the Emlid Flow app (available for android and iOS) and wifi. This allows for the collection of data in a RINEX format, which is very useful for post-processing with any avaiable software on the market.
 
 ## Robot Platform
-TODO: give link to miguels software, explain. Talk about how bootup is handled automatically, but mentuion that it is possible to ssh to pluto wifi with passwords inside.
+The software used to communicate between the NUC of Pluto and the internal electronics comes from https://github.com/migsdigs/iRobotATRV/tree/main. This was written by Miguel Garcia Naude when he worked at KTH, who has adapted it from previous works.
+
+To ensure that users do not need to ssh into the NUC to start the above communication ROS software every time, a script written to launch the ROS nodes on powerup.
+
+However, upon need it is still possible to ssh into Pluto. Pluto has its own router and wifi that can be connected to, where the passwords and usernames are written on the inside of the top chassis lid. 
 
 # Operation
 
@@ -147,7 +151,7 @@ TODO: discussion on how to collect GPS data and postprocess it
 The robot is owned by professor Patric Jensfelt, and used for projects by doctoral student Waqas Ali (2024-), reach out if you are interested.
 
 ## The robot is making noise during operation, is this normal?
-There are several sources of noise, which are not cause for alarm. The sounds that are emitted normally but which might be interpreted as problematic are the lidar and engine belts. While the sensor rig is on, the Livox lidar emits a "grinding", almost "sandy" noise. When the robot moves, it sometimes emits a sharp thumping sound. This is a sound coming from an engine belt.
+There are several sources of "irregular" noise, which are not necessarily cause for alarm. The sounds that are emitted normally but which might be interpreted as problematic are the lidar and engine belts. While the sensor rig is on, the Livox lidar emits a "grinding", almost "sandy" noise. When the robot moves, it sometimes emits a sharp thumping sound. This is a sound coming from an engine belt.
 
 It can be hard to recognize if these are the sounds that are being heard. Think critically on if you believe the sounds emanating are actually signs of damage, or just normal operation.
 
