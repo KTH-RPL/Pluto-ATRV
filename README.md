@@ -142,7 +142,21 @@ Note that once pressing CTRL + 5 to turn on collection, a separate terminal will
 ![screenshot](images/rqt.png)
 
 ### GNSS
-TODO: discussion on how to collect GPS data and postprocess it 
+To operate the GNSS, Emlid Flow app on a mobile unit (android/iOS). There are some basic instructions to follow to connect your phone to the Reach unit by wifi, see https://docs.emlid.com/reach/before-you-start/first-setup/. Note that the power to the Reach is turned on when Pluto is switched on.
+
+Selecting the RPL-Reach:EC:ED connection (password is the default in the setup instructions from the link above), you gain access to changing settings, recording data, and downloading recorded data. You can also see the status of the GNSS connection, number of visible satellites, noise to signal ratio, and so on.
+
+Depending on the accuracy needed in your project data, you can rely on normal GNSS, or you can use PPK to postprocess the data. Postprocessing the data can be done using a number of available free software suites. Here we briefly describe how to use Emlid Studio https://emlid.com/emlid-studio/, which is available for free on Windows and Mac. 
+
+The postprocessing requires two of the files from the recording, the observation file (.O) and the navigation file (.P). We also need an observation file from a base station. There is a network of static GNSS stations in Sweden that can be used for correction data, run by Swepos. To access these corrections, you can either download it yourself through Swepos ftp servers https://www.lantmateriet.se/en/geodata/gps-geodesi-och-swepos/swepos/swepos-services/post-processing/rinex-data/, or you can get a subscription for free virtual RINEX files from Swepos. Such subscriptions are free for those working in research or universities in Sweden (you simply need to contact Swepos support over email), and it gives you access to order as many correction files as you want. 
+
+With these three files, input them as shown in the image below in Emlid Studio, and then process the path. You will get a resultant .pos file, which gives you timestamps, locations and associated uncertainties.
+
+![screenshot](images/Emlidstudio_files.PNG)
+
+Note: You will need a relatively stable connection to GNSS to get a good path accuracy. An example of a good path that you can achieve with this postprocess is shown first below. The grids represent 20cm intervals, and the data has a standard deviation in position below 3cm. Then an example of a bad path with poor connection is shown below as well. The grids in that image represent 2m. Therefore, if you want really accurate GNSS data, consider planning a path to where the sky is not covered too much.
+![screenshot](images/good_gps_20cm.PNG)
+![screenshot](images/bad_gps_2m.PNG)
 
 
 # FAQ
