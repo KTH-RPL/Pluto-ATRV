@@ -6,7 +6,7 @@ A manual for the all terrain vehicle (ATRV) Pluto.
 - [Hardware](#Hardware)
     - [Sensor Hardware](#Sensor-Hardware)
     - [Computational Hardware](#Computational-Hardware)
-    - [Mechanical & Electrical Hardware](#Mechanical-&-Electrical-Hardware)
+    - [Mechanical and Electrical Hardware](#Mechanical-and-Electrical-Hardware)
     - [CAD files for 3D printing parts](#CAD-files-for-3D-printing-parts)
 - [Software](#Software)
     - [GNSS](#GNSS)
@@ -15,7 +15,7 @@ A manual for the all terrain vehicle (ATRV) Pluto.
     - [Charging Batteries](#Charging-Batteries)
     - [Getting It Moving](#Getting-It-Moving)
     - [Collecting Data](#Collecting-Data)
-    - [GNSS & PPK](#GNSS-&-PPK)
+    - [GNSS and PPK](#GNSS-and-PPK)
 - [FAQ](#FAQ)
 
 
@@ -57,7 +57,7 @@ The robot has several different computer architectures on board. To collect data
 
 Note that at the time of writing, the Jetson is not currently utilized by Pluto. This is planned to change in the future.
 
-## Mechanical & Electrical Hardware
+## Mechanical and Electrical Hardware
 We use a wireless controller of the type "Logitech F710 Wireless Gamepad" to control the robot movement. The wireless reciever for this controller is connected to the Intel NUC on the second level of the robot chassis. To interact with the sensor rig, any type of bluetooth keyboard can be used.
 
 There are four electrical DC Gearmotors in the vehicle, produced by Bison Gear & Engineering Corp. These motors are separately connected to each of the four wheels of the robot through toothed belts. As with most electric vehicles, this gives greater control opportunities, and Pluto is able to produce pure rotation without translation because of this. The motors each have the following electro-mechanical properties
@@ -137,7 +137,7 @@ Note that once pressing CTRL + 5 to turn on collection, a separate terminal will
 
 ![screenshot](images/rqt.png)
 
-### GNSS & PPK
+### GNSS and PPK
 To operate the GNSS, Emlid Flow app on a mobile unit (android/iOS). There are some basic instructions to follow to connect your phone to the Reach unit by wifi, see https://docs.emlid.com/reach/before-you-start/first-setup/. Note that the power to the Reach is turned on when Pluto is switched on.
 
 Selecting the RPL-Reach:EC:ED connection (password is the default in the setup instructions from the link above), you gain access to changing settings, recording data, and downloading recorded data. You can also see the status of the GNSS connection, number of visible satellites, noise to signal ratio, and so on.
