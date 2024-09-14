@@ -15,7 +15,7 @@ A manual for the all terrain vehicle (ATRV) Pluto.
     - [Charging Batteries](#Charging-Batteries)
     - [Getting It Moving](#Getting-It-Moving)
     - [Collecting Data](#Collecting-Data)
-    - [GNSS](#GNSS)
+    - [GNSS & PPK](#GNSS-&-PPK)
 - [FAQ](#FAQ)
 
 
@@ -137,7 +137,7 @@ Note that once pressing CTRL + 5 to turn on collection, a separate terminal will
 
 ![screenshot](images/rqt.png)
 
-### GNSS
+### GNSS & PPK
 To operate the GNSS, Emlid Flow app on a mobile unit (android/iOS). There are some basic instructions to follow to connect your phone to the Reach unit by wifi, see https://docs.emlid.com/reach/before-you-start/first-setup/. Note that the power to the Reach is turned on when Pluto is switched on.
 
 Selecting the RPL-Reach:EC:ED connection (password is the default in the setup instructions from the link above), you gain access to changing settings, recording data, and downloading recorded data. You can also see the status of the GNSS connection, number of visible satellites, noise to signal ratio, and so on.
