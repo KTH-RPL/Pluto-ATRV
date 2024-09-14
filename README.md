@@ -4,18 +4,19 @@ A manual for the all terrain vehicle (ATRV) Pluto.
 ## Table of contents
 - [Introduction](#Introduction)
 - [Hardware](#Hardware)
-    - [Computational Hardware](##Computational-Hardware)
-    - [Sensor Hardware](##Sensor-Hardware)
-    - [Mechanical & Electrical Hardware](##Mechanical-&-Electrical-Hardware)
+    - [Sensor Hardware](#Sensor-Hardware)
+    - [Computational Hardware](#Computational-Hardware)
+    - [Mechanical & Electrical Hardware](#Mechanical-&-Electrical-Hardware)
+    - [CAD files for 3D printing parts](#CAD-files-for-3D-printing-parts)
 - [Software](#Software)
-    - [Sensor Rig](#Sensor-Rig)
+    - [GNSS](#GNSS)
     - [Robot Platform](#Robot-Platform)
 - [Operation](#Operation)
+    - [Charging Batteries](#Charging-Batteries)
     - [Getting It Moving](#Getting-It-Moving)
     - [Collecting Data](#Collecting-Data)
-    - [Charging Batteries](#Charging-Batteries)
+    - [GNSS](#GNSS)
 - [FAQ](#FAQ)
-    - [Stuck!](##Stuck!)
 
 
 # Introduction
